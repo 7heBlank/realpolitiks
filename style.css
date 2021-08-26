@@ -180,22 +180,3 @@ nav .fa{
     cursor: pointer;
     padding: 18px 0;
 }
-/*---------- SCHOOL ----------*/
-.school{
-    width: 80%;
-    margin: auto;
-    text-align: center;
-    padding-top: 50px;
-}
-
-.school-col{
-    flex-basis: 32%;
-    border-radius: 10px;
-    margin-bottom: 30px;
-    position: relative;
-    overflow: hidden;
-}
-
-.school-col img{
-    width: 15%;
-}
