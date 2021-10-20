@@ -4,7 +4,12 @@
     font-family: 'Poppins';
 }
 
-/*---------- HOME ----------*/
+body{
+    background: #161623;
+    justify-content: center;
+}
+
+/*---------- INDEX ----------*/
 .header{
     min-height: 100vh;
     width: 100%;
@@ -91,21 +96,69 @@ nav img{
 
 .hero-btn{
     display: inline-block;
-    text-decoration: none;
-    color: #fff;
-    border: 1px solid #fff;
-    border-width: 2px;
     padding: 12px 34px;
     font-size: 13px;
-    background: transparent;
-    position: relative;
-    cursor: pointer;
+    color: #fff;
+    text-decoration: none;
+    text-transform: uppercase;
+    overflow: hidden;
+    transition: 0.5s;
+    letter-spacing: 1px;
 }
 
 .hero-btn:hover{
-    border: 2px solid #00b7ff;
-    background: #00b7ff;
-    transition: 1s;
+    background: #fff;
+    color: #161623;
+    box-shadow: 0 0 5px #fff,
+                0 0 25px #fff,
+                0 0 50px #fff,
+                0 0 200px #fff;
+}
+
+.hero-btn span{
+    position: absolute;
+    display: block;
+}
+
+.hero-btn span:nth-child(1){
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 2px;
+    background: linear-gradient(90deg, transparent, #fff);
+    animation: animate1 1s linear infinite;
+}
+
+@keyframes animate1{
+    0%
+    {
+        left: -100%;
+    }
+    50%, 100%
+    {
+        left: -100%;
+    }
+}
+
+.hero-btn span:nth-child(2){
+    top: -100;
+    right: 0;
+    width: 2px;
+    height: 100%;
+    background: linear-gradient(180deg, transparent, #fff);
+    animation: animate2 1s linear infinite;
+    animation-delay: 0.25s;
+}
+
+@keyframes animate2{
+    0%
+    {
+        top: -100%;
+    }
+    50%, 100%
+    {
+        top: -100%;
+    }
 }
 
 nav .fa{
@@ -146,6 +199,7 @@ nav .fa{
     width: 100%;
     text-align: center;
     padding: 30px 0;
+    color: #fff;
 }
 
 .footer h4{
@@ -197,6 +251,7 @@ nav .fa{
     margin: auto;
     text-align: center;
     padding-top: 50px;
+    color: #fff;
 }
 .club-pic img{
     width: 80%;
@@ -207,6 +262,7 @@ nav .fa{
     margin: auto;
     text-align: center;
     padding-top: 50px;
+    color: #fff;
 }
 
 .school-col{
@@ -240,11 +296,96 @@ nav .fa{
     text-align: center;
     color: #fff;
 }
+
+.news{
+    width: 80%;
+    margin: auto;
+    text-align: center;
+    padding-top: 50px;
+    align-items: center;
+    justify-content: center;
+}
+
+.container{
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    max-width: 1200px;
+    flex-wrap: wrap;
+    z-index: 1;
+}
+
+.container .card{
+    position: relative;
+    width: 280px;
+    height: 400px;
+    margin: 30px;
+    box-shadow: 20px 20px 50px rgba(0, 0, 0, 0.5);
+    border-radius: 15px;
+    background: rgba(255, 255, 255, 0.1);
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-top: 1px solid rgba(255, 255, 255, 0.5);
+    border-left: 1px solid rgba(255, 255, 255, 0.5);
+    backdrop-filter: blur(5px);
+}
+
+.container .card .content{
+    padding: 20px;
+    text-align: center;
+    transform: translateY(100px);
+    opacity: 0;
+    transition: 0.5s;
+}
+
+.container .card:hover .content{
+    transform: translateY(0px);
+    opacity: 1;
+}
+
+.container .card .content h2{
+    position: absolute;
+    top: -80px;
+    right: 30px;
+    font-size: 8em;
+    color: rgba(255, 255, 255, 0.05);
+    pointer-events: none;
+}
+
+.container .card .content h3{
+    font-size: 1.8em;
+    color: #fff;
+    z-index: 1;
+}
+
+.container .card p{
+    font-size: 1em;
+    color: #fff;
+}
+
+.container .card .content a{
+    position: relative;
+    display: inline-block;
+    padding: 8px 20px;
+    margin-top: 15px;
+    background: #fff;
+    color: #000;
+    border-radius: 20px;
+    text-decoration: none;
+    font-weight: 500;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+}
+
+/*---------- VOLUME1 ----------*/
 .vol1{
     width: 80%;
     margin: auto;
     text-align: center;
     padding-top: 50px;
+    color: #fff;
 }
 
 .v1p1 img{
@@ -268,5 +409,67 @@ nav .fa{
 }
 
 .v1p6 img{
+    width: 50%;
+}
+
+/*---------- VOLUME2 ----------*/
+.vol2{
+    width: 80%;
+    margin: auto;
+    text-align: center;
+    padding-top: 50px;
+    color: #fff;
+}
+
+.v2p1 img{
+    width: 50%;
+}
+
+.v2p2 img{
+    width: 50%;
+}
+
+.v2p3 img{
+    width: 50%;
+}
+
+/*---------- VOLUME3 ----------*/
+.vol3{
+    width: 80%;
+    margin: auto;
+    text-align: center;
+    padding-top: 50px;
+    color: #fff;
+}
+
+.v3p1 img{
+    width: 50%;
+}
+
+.v3p2 img{
+    width: 50%;
+}
+
+.v3p3 img{
+    width: 50%;
+}
+
+.v3p4 img{
+    width: 50%;
+}
+
+.v3p5 img{
+    width: 50%;
+}
+
+.v3p6 img{
+    width: 50%;
+}
+
+.v3p7 img{
+    width: 50%;
+}
+
+.v3p8 img{
     width: 50%;
 }
