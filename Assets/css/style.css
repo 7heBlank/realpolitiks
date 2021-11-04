@@ -50,6 +50,7 @@ nav img{
 .nav-links ul li{
     list-style: none;
     display: inline-block;
+    font-weight: bold;
     padding: 8px 25px;
     position: relative;
 }
@@ -97,7 +98,8 @@ nav img{
 .hero-btn{
     display: inline-block;
     padding: 12px 34px;
-    font-size: 13px;
+    font-size: 14px;
+    font-weight: bold;
     color: #fff;
     text-decoration: none;
     text-transform: uppercase;
@@ -165,7 +167,7 @@ nav .fa{
     display: none;
 }
 
-@media(max-width: 700px){
+/*@media(max-width: 700px){
     .text-box h1{
         font-size: 20px;
     }
@@ -193,7 +195,7 @@ nav .fa{
     .nav-links ul{
         padding: 30px;
     }
-}
+}*/
 
 .footer{
     width: 100%;
@@ -247,6 +249,10 @@ nav .fa{
 }
 
 .content_a{
+    position: relative;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
     width: 50%;
     margin: auto;
     text-align: center;
@@ -379,97 +385,81 @@ nav .fa{
     box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
 }
 
-/*---------- VOLUME1 ----------*/
-.vol1{
-    width: 80%;
+/*---------- VOLUMES ----------*/
+.slider{
+    width: 100%;
     margin: auto;
     text-align: center;
     padding-top: 50px;
+    padding-bottom: 80px;
     color: #fff;
+    position: relative;
+    background: rgba(0, 0, 0, 0.2);
 }
 
-.v1p1 img{
-    width: 50%;
+.slider h3{
+    padding-bottom: 20px;
 }
 
-.v1p2 img{
-    width: 50%;
+.myslide{
+    width: 75%;
+    display: none;
+    overflow: hidden;
 }
 
-.v1p3 img{
-    width: 50%;
-}
-
-.v1p4 img{
-    width: 50%;
-}
-
-.v1p5 img{
-    width: 50%;
-}
-
-.v1p6 img{
-    width: 50%;
-}
-
-/*---------- VOLUME2 ----------*/
-.vol2{
-    width: 80%;
-    margin: auto;
-    text-align: center;
-    padding-top: 50px;
+.prev, .next{
+    position: relative;
+    font-size: 45px;
+    padding: 300px;
+    cursor: pointer;
     color: #fff;
+    transition: 0.5s;
+    user-select: none;
 }
 
-.v2p1 img{
-    width: 50%;
+.prev:hover, .next:hover{
+    color: #3498db;
 }
 
-.v2p2 img{
-    width: 50%;
+.next{
+    right: 0;
 }
 
-.v2p3 img{
-    width: 50%;
+.dotsbox{
+    position: absolute;
+    left: 50%;
+    transform: translate(-50%, -70%);
+    bottom: 20px;
+    cursor: pointer;
 }
 
-/*---------- VOLUME3 ----------*/
-.vol3{
-    width: 80%;
-    margin: auto;
-    text-align: center;
-    padding-top: 50px;
-    color: #fff;
+.dot{
+    display: inline-block;
+    width: 10px;
+    height: 10px;
+    border: 3px solid #fff;
+    border-radius: 50%;
+    margin: 0 10px;
+    cursor: pointer;
 }
 
-.v3p1 img{
-    width: 50%;
+.active, .dot:hover{
+    border-color: #3498db;
 }
 
-.v3p2 img{
-    width: 50%;
+.fade {
+    -webkit-animation-name: fade;
+    -webkit-animation-duration: 3s;
+    animation-name: fade;
+    animation-duration: 3s;
 }
-
-.v3p3 img{
-    width: 50%;
+  
+@-webkit-keyframes fade {
+    from {opacity: 0.7}
+    to {opacity: 1}
 }
-
-.v3p4 img{
-    width: 50%;
-}
-
-.v3p5 img{
-    width: 50%;
-}
-
-.v3p6 img{
-    width: 50%;
-}
-
-.v3p7 img{
-    width: 50%;
-}
-
-.v3p8 img{
-    width: 50%;
+  
+@keyframes fade {
+    from {opacity: 0.7}
+    to {opacity: 1}
 }
