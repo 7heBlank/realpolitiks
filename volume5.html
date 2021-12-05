@@ -24,7 +24,7 @@
                             <li><a href="index.html">HOME</a></li>
                             <li><a href="about.html">ABOUT</a></li>
                             <!-- <li><a href="">VIDEOS</a></li> -->
-                            <li><a href="">NEWSPAPERS</a></li>
+                            <li><a href="newspapers.html">NEWSPAPERS</a></li>
                             <!-- <li><a href="">CONTACT</a></li> -->
                         </ul>
                     </div>
@@ -34,48 +34,37 @@
             </section>
 
             <!---------- Content ---------->
-            <section class="news">
-                <div class="container">
-                    <div class="card">
-                        <div class="content">
-                            <h2>01</h2>
-                            <h3>Volume I</h3>
-                            <p>Chaos Sweeps Afghanistan</p>
-                            <a href="volume1.html">View</a>
-                        </div>
-                    </div>
-                    <div class="card">
-                        <div class="content">
-                            <h2>02</h2>
-                            <h3>Volume II</h3>
-                            <p>Two Decades After 9/11</p>
-                            <a href="volume2.html">View</a>
-                        </div>
-                    </div>
-                    <div class="card">
-                        <div class="content">
-                            <h2>03</h2>
-                            <h3>Volume III</h3>
-                            <p>High Tensions On The High Seas</p>
-                            <a href="volume3.html">View</a>
-                        </div>
-                    </div>
-                    <div class="card">
-                        <div class="content">
-                            <h2>04</h2>
-                            <h3>Volume IV</h3>
-                            <p>Fly Me To The Moon</p>
-                            <a href="volume4.html">View</a>
-                        </div>
-                    </div>
-                    <div class="card">
-                        <div class="content">
-                            <h2>05</h2>
-                            <h3>Volume V</h3>
-                            <p>Armistice Day</p>
-                            <a href="volume5.html">View</a>
-                        </div>
-                    </div>
+            <section class="slider">
+                <h3>VOLUME V | CHAOS SWEEPS AFGHANISTAN</h3>
+                <div class="myslide fade">
+                    <img src="Newspapers/Volume5/1.png" style="width: 50%; height: 100%; transform: translate(32.5%);">
+                </div>
+                <div class="myslide fade">
+                    <img src="Newspapers/Volume5/2.png" style="width: 50%; height: 100%; transform: translate(32.5%);">
+                </div>
+                <div class="myslide fade">
+                    <img src="Newspapers/Volume5/3.png" style="width: 50%; height: 100%; transform: translate(32.5%);">
+                </div>
+                <div class="myslide fade">
+                    <img src="Newspapers/Volume5/4.png" style="width: 50%; height: 100%; transform: translate(32.5%);">
+                </div>
+                <div class="myslide fade">
+                    <img src="Newspapers/Volume5/5.png" style="width: 50%; height: 100%; transform: translate(32.5%);">
+                </div>
+                <div class="myslide fade">
+                    <img src="Newspapers/Volume5/6.png" style="width: 50%; height: 100%; transform: translate(32.5%);">
+                </div>
+
+                <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+  		        <a class="next" onclick="plusSlides(1)">&#10095;</a>
+
+                <div class="dotsbox" style="text-align:center">
+                    <span class="dot" onclick="currentSlide(1)"></span>
+			        <span class="dot" onclick="currentSlide(2)"></span>
+			        <span class="dot" onclick="currentSlide(3)"></span>
+			        <span class="dot" onclick="currentSlide(4)"></span>
+			        <span class="dot" onclick="currentSlide(5)"></span>
+                    <span class="dot" onclick="currentSlide(6)"></span>
                 </div>
             </section>
 
@@ -91,9 +80,10 @@
                 </div>
                 <p> Made by BLΔNK aka Joshua Ha </p>
             </section>
+            
+            <script type="text/javascript" src="Assets/js/sliders.js"></script>
 
             <script>
-
                 var navLinks = document.getElementById("navLinks")
                 function showMenu(){
                     navLinks.style.right = "0"
@@ -104,22 +94,9 @@
             </script>
 
             <script type="text/javascript">
-
                     document.addEventListener("contextmenu",function(About){
-                        About.preventDefault();
-        
+                    About.preventDefault();
                 })
-
-            </script>
-
-            <script type="text/javascript" src="Assets/js/vanilla-tilt.js"></script>
-
-            <script>VanillaTilt.init(document.querySelectorAll(".card"), {
-                max: 25,
-                speed: 400,
-                glare: true,
-                "max-glare": 0.5,
-            });
             </script>
 
         </body>
