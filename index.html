@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta name="viewport" content="with=device-width", initial-scale="1.0">
+            <title>Reapolitik Papers</title>
+            <link rel="stylesheet" href="Assets/css/style.css" >
+            <link rel="preconnect" href="https://fonts.gstatic.com">
+            <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;600;700&display=swap" rel="stylesheet">"
+            <link rel="stylesheet" href="Assets/css/fonts/all.min.css">
+            <link rel="stylesheet" href="Assets/css/fonts/fontawesome.min.css">
+            
+    </head>
+        <body>
+
+            <!---------- Header ---------->
+            <section class="header">
+                <nav>
+                    <a href="index.html"><img src="Assets/css/images/favicon.ico"></a>
+                    <div class="logo-txt">
+                        <a>RPPC CHHS</a>
+                    </div>
+                    <div class="nav-links" id="navLinks">
+                        <i class="fab fa-times" onclick="hideMenu()"></i>
+                        <ul>
+                            <li><a href="">HOME</a></li>
+                            <li><a href="about.html">ABOUT</a></li>
+                            <!-- <li><a href="">VIDEOS</a></li> -->
+                            <li><a href="newspapers.html">NEWSPAPERS</a></li>
+                            <!-- <li><a href="">CONTACT</a></li> -->
+                        </ul>
+                    </div>
+                    <i class="fab fa-bars" onclick="showMenu()"></i>
+                </nav>
+            <div class ="text-box">
+                <h1>Realpolitik Papers</h1>
+                <p>This website is dedicated to act as a neutral news network focused on a multitude of different subjects <br> including international politics, history, technology etc.</p>
+                <span></span>
+                <span></span>
+                <span></span>
+                <span></span>
+                <a href="volume12.html" class="hero-btn">View Recent</a>
+            </div>
+            </section>
+
+            <!---------- Footer ---------->
+            <section class="footer">
+                <h3>About Us</h3>
+                <p>Our purpose is solely to provide a conduit between information and man, and to ensure that our <br> audience is properly informed of current events.</p>
+                <div class="icons">  
+                    <a href="https://www.facebook.com/Realpolitik-Publishing-Club-CHHS-103259528749066"><i class ="fab fa-facebook"></i></a>
+                    <a href="https://twitter.com/RealPolitik2023"><i class ="fab fa-twitter"></i></a>
+                    <a href="https://www.instagram.com/theofficialrppc/"><i class ="fab fa-instagram"></i></a>
+                    <a href="https://discord.gg/8ZPPBnKH8p"><i class ="fab fa-discord"></i></a>
+                </div>
+                <p> Made by BLΔNK </p>
+            </section>
+
+            <script>
+
+                var navLinks = document.getElementById("navLinks")
+                function showMenu(){
+                    navLinks.style.right = "0"
+                }
+                function hideMenu(){
+                    navLinks.style.right = "-200px"
+                }
+
+            </script>
+            
+            <script type="text/javascript">
+
+                document.addEventListener("contextmenu",function(About){
+                    About.preventDefault();
+                })
+
+            </script>
+
+        </body>
+</html>
